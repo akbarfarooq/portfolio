@@ -1,0 +1,108 @@
+- generic [active] [ref=f1e1]:
+  - banner [ref=f1e2]:
+    - link "AKBAR_" [ref=f1e3] [cursor=pointer]:
+      - /url: /
+    - navigation "Primary navigation" [ref=f1e4]:
+      - link "About" [ref=f1e5] [cursor=pointer]:
+        - /url: /about
+      - link "Work" [ref=f1e6] [cursor=pointer]:
+        - /url: /projects
+      - link "Services" [ref=f1e7] [cursor=pointer]:
+        - /url: /skills
+      - link "Notes" [ref=f1e8] [cursor=pointer]:
+        - /url: /writing
+      - link "Start a project ↗" [ref=f1e9] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=f1e10]:
+    - generic [ref=f1e12]:
+      - generic [ref=f1e13]: 03 / AKBAR FAROOQ
+      - heading [level=1] [ref=f1e14]:
+        - text: Selected
+        - emphasis [ref=f1e15]: work.
+      - paragraph [ref=f1e16]: Research-led builds and technical explorations. Project names and outcomes marked as concepts are placeholders until client work is public.
+    - generic [ref=f1e17]:
+      - article [ref=f1e19]:
+        - generic [ref=f1e20]:
+          - generic [ref=f1e21]: "01"
+          - generic [ref=f1e22]: Agentic AI / Research
+        - heading "Loop Engineering" [level=3] [ref=f1e23]
+        - generic [ref=f1e24]:
+          - generic [ref=f1e25]:
+            - text: Problem
+            - paragraph [ref=f1e26]: Agent loops can keep calling tools long after the useful work is done, turning autonomy into cost and reliability risk.
+          - generic [ref=f1e27]:
+            - text: Approach
+            - paragraph [ref=f1e28]: A practical framework for governing ReAct-style loops with explicit stopping conditions, observation budgets, and human checkpoints.
+        - generic [ref=f1e29]:
+          - generic [ref=f1e30]: ReAct / LLM APIs / Guardrails
+          - generic [ref=f1e31]:
+            - text: Outcome
+            - generic [ref=f1e32]: A clearer production mental model for agents that stay useful, observable, and bounded.
+      - article [ref=f1e34]:
+        - generic [ref=f1e35]:
+          - generic [ref=f1e36]: "02"
+          - generic [ref=f1e37]: Automation / Architecture
+        - heading "Token Budget Lab" [level=3] [ref=f1e38]
+        - generic [ref=f1e39]:
+          - generic [ref=f1e40]:
+            - text: Problem
+            - paragraph [ref=f1e41]: LLM features become difficult to operate when every request uses the same model, context window, and retrieval path.
+          - generic [ref=f1e42]:
+            - text: Approach
+            - paragraph [ref=f1e43]: Mapped a cost-aware request architecture using RAG, caching, rate limits, and model tiering as deliberate control points.
+        - generic [ref=f1e44]:
+          - generic [ref=f1e45]: RAG / Redis / Model routing
+          - generic [ref=f1e46]:
+            - text: Outcome
+            - generic [ref=f1e47]: A repeatable blueprint for balancing answer quality, latency, and spend before production traffic arrives.
+      - article [ref=f1e49]:
+        - generic [ref=f1e50]:
+          - generic [ref=f1e51]: "03"
+          - generic [ref=f1e52]: Web Development / Security
+        - heading "Identity Protocol" [level=3] [ref=f1e53]
+        - generic [ref=f1e54]:
+          - generic [ref=f1e55]:
+            - text: Problem
+            - paragraph [ref=f1e56]: Authentication failures are often caused by treating tokens, sessions, browser threats, and revocation as separate problems.
+          - generic [ref=f1e57]:
+            - text: Approach
+            - paragraph [ref=f1e58]: Compared JWT and sessions, designed two-token refresh flows, and documented Redis blacklisting with XSS, CSRF, and bcrypt controls.
+        - generic [ref=f1e59]:
+          - generic [ref=f1e60]: JWT / Redis / bcrypt
+          - generic [ref=f1e61]:
+            - text: Outcome
+            - generic [ref=f1e62]: A security-first reference architecture for web products that need a clear auth boundary.
+      - article [ref=f1e64]:
+        - generic [ref=f1e65]:
+          - generic [ref=f1e66]: "04"
+          - generic [ref=f1e67]: Systems / Delivery
+        - heading "Agent Factory Notes" [level=3] [ref=f1e68]
+        - generic [ref=f1e69]:
+          - generic [ref=f1e70]:
+            - text: Problem
+            - paragraph [ref=f1e71]: "New agent systems need more than prompts: they need conventions, tools, skills, and a client-facing delivery loop."
+          - generic [ref=f1e72]:
+            - text: Approach
+            - paragraph [ref=f1e73]: Studied the Antigravity CLI ecosystem, MCP configuration patterns, and the Forward Deployed Engineer model through the GIAIC/Panaversity journey.
+        - generic [ref=f1e74]:
+          - generic [ref=f1e75]: MCP / CLI systems / FDE
+          - generic [ref=f1e76]:
+            - text: Outcome
+            - generic [ref=f1e77]: A grounded approach to taking an agent from experiment to a useful workflow inside a real team.
+  - contentinfo [ref=f1e78]:
+    - generic [ref=f1e79]:
+      - generic [ref=f1e80]: AKBAR FAROOQ / PAKISTAN
+      - paragraph [ref=f1e81]:
+        - text: Build the system
+        - emphasis [ref=f1e82]: behind the idea.
+    - generic [ref=f1e83]:
+      - link "Contact" [ref=f1e84] [cursor=pointer]:
+        - /url: /contact
+      - link "GitHub ↗" [ref=f1e85] [cursor=pointer]:
+        - /url: https://github.com
+      - link "LinkedIn ↗" [ref=f1e86] [cursor=pointer]:
+        - /url: https://linkedin.com
+      - link "Fiverr ↗" [ref=f1e87] [cursor=pointer]:
+        - /url: https://fiverr.com
+    - generic [ref=f1e88]: © 2026 Akbar Farooq. Built for useful autonomy.
+  - button "Open Next.js Dev Tools" [ref=f1e94] [cursor=pointer]

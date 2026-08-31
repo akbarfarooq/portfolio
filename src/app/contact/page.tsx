@@ -1,0 +1,4 @@
+import Link from "next/link";
+import { PageIntro } from "@/components/PageIntro";
+
+export default function Contact() { return <><PageIntro index="06" title={<>Start a<br /><em>conversation.</em></>} intro="Have a workflow that should be automated, a product that needs a serious frontend, or an agent idea that needs boundaries? Send the brief." /><section className="contact-grid"><div><span className="eyebrow">Best first step</span><a className="contact-email" href="mailto:hello@akbarfarooq.dev">hello@akbarfarooq.dev</a><p className="muted">Email is a placeholder address for now. Replace it before publishing.</p></div><div className="contact-links"><span className="eyebrow">Elsewhere</span><Link href="https://github.com">GitHub (placeholder) ↗</Link><Link href="https://linkedin.com">LinkedIn (placeholder) ↗</Link><Link href="https://fiverr.com">Fiverr (placeholder) ↗</Link></div></section></>; }

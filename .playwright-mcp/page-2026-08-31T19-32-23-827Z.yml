@@ -1,0 +1,45 @@
+- generic [active] [ref=f4e1]:
+  - banner [ref=f4e2]:
+    - link "AKBAR_" [ref=f4e3] [cursor=pointer]:
+      - /url: /
+    - navigation "Primary navigation" [ref=f4e4]:
+      - link "Start a project ↗" [ref=f4e5] [cursor=pointer]:
+        - /url: /contact
+  - main [ref=f4e6]:
+    - generic [ref=f4e8]:
+      - generic [ref=f4e9]: 06 / AKBAR FAROOQ
+      - heading [level=1] [ref=f4e10]:
+        - text: Start a
+        - emphasis [ref=f4e11]: conversation.
+      - paragraph [ref=f4e12]: Have a workflow that should be automated, a product that needs a serious frontend, or an agent idea that needs boundaries? Send the brief.
+    - generic [ref=f4e13]:
+      - generic [ref=f4e14]:
+        - generic [ref=f4e15]: Best first step
+        - link "hello@akbarfarooq.dev" [ref=f4e16] [cursor=pointer]:
+          - /url: mailto:hello@akbarfarooq.dev
+        - paragraph [ref=f4e17]: Email is a placeholder address for now. Replace it before publishing.
+      - generic [ref=f4e18]:
+        - generic [ref=f4e19]: Elsewhere
+        - link "GitHub (placeholder) ↗" [ref=f4e20] [cursor=pointer]:
+          - /url: https://github.com
+        - link "LinkedIn (placeholder) ↗" [ref=f4e21] [cursor=pointer]:
+          - /url: https://linkedin.com
+        - link "Fiverr (placeholder) ↗" [ref=f4e22] [cursor=pointer]:
+          - /url: https://fiverr.com
+  - contentinfo [ref=f4e23]:
+    - generic [ref=f4e24]:
+      - generic [ref=f4e25]: AKBAR FAROOQ / PAKISTAN
+      - paragraph [ref=f4e26]:
+        - text: Build the system
+        - emphasis [ref=f4e27]: behind the idea.
+    - generic [ref=f4e28]:
+      - link "Contact" [ref=f4e29] [cursor=pointer]:
+        - /url: /contact
+      - link "GitHub ↗" [ref=f4e30] [cursor=pointer]:
+        - /url: https://github.com
+      - link "LinkedIn ↗" [ref=f4e31] [cursor=pointer]:
+        - /url: https://linkedin.com
+      - link "Fiverr ↗" [ref=f4e32] [cursor=pointer]:
+        - /url: https://fiverr.com
+    - generic [ref=f4e33]: © 2026 Akbar Farooq. Built for useful autonomy.
+  - button "Open Next.js Dev Tools" [ref=f4e39] [cursor=pointer]
