@@ -13,7 +13,7 @@ a:focus-visible { outline: 2px solid var(--acid); outline-offset: 5px; }
 .brand { font-size: 16px; font-weight: 800; letter-spacing: .09em; }
 .brand span { color: var(--acid); }
 .mobile-menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; color: var(--paper); width: 36px; height: 36px; }
-.mobile-menu-toggle span { display: block; width: 24px; height: 2px; background: var(--paper); margin: 5px 0; transition: all 0.35s cubic-bezier(0.68, -0.55, 0.265, 1.55); position: relative; }
+.mobile-menu-toggle span { display: block; width: 24px; height: 2px; background: var(--paper); margin: 5px 0; transition: all 0.35s ease; position: relative; }
 .site-header nav { align-items: center; display: flex; gap: 28px; font-family: var(--mono); font-size: 11px; }
 .site-header nav a { color: var(--muted); transition: color .2s ease; }
 .site-header nav a:hover, .site-header nav .nav-cta { color: var(--paper); }
