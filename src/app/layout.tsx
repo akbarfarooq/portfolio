@@ -14,6 +14,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Detect if running on Netlify (Netlify sets NETLIFY env var to 'true' during builds)
+const isNetlify = process.env.NETLIFY === "true";
+const robotsContent = isNetlify 
+  ? "noindex, nofollow"  // Netlify: don't index (Vercel is primary)
+  : "index, follow";      // Vercel: index this version
+
 export const metadata: Metadata = {
   title: "Akbar Farooq - Full Stack & Agentic AI Developer | Portfolio",
   description: "Full stack developer specializing in agentic AI workflows, automation systems, and web products. Based in Lahore, Pakistan.",
@@ -44,7 +50,7 @@ export const metadata: Metadata = {
     title: "Akbar Farooq - Full Stack & Agentic AI Developer",
     description: "Full stack developer specializing in agentic AI workflows, automation systems, and web products.",
   },
-  robots: "index, follow",
+  robots: robotsContent,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
