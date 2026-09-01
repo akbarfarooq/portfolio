@@ -1,6 +1,18 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { MotionReveal } from "@/components/MotionReveal";
 import { services } from "@/lib/content";
+
+export const metadata: Metadata = {
+  title: "Akbar Farooq - Full Stack & Agentic AI Developer | Portfolio",
+  description: "Full stack developer specializing in agentic AI workflows, automation systems, and web products. Based in Lahore, Pakistan.",
+  openGraph: {
+    title: "Akbar Farooq - Full Stack & Agentic AI Developer",
+    description: "Full stack developer specializing in agentic AI workflows, automation systems, and web products.",
+    url: "https://akbarfarooq.vercel.app",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return <><section className="home-hero"><MotionReveal><span className="eyebrow">01 / INDEPENDENT BUILDER / PAKISTAN</span><h1>Systems that<br /><em>think forward.</em></h1><p className="hero-copy">I&apos;m Akbar. I design and build agentic AI workflows, automation systems, and web products for teams with consequential problems.</p><Link className="button" href="/contact">Work with me <span>↗</span></Link></MotionReveal><div className="signal-mark" aria-hidden="true"><span>◌</span><small>AGENT<br />ONLINE</small></div></section><section className="home-strip"><span>Currently exploring</span><strong>Bounded autonomy / multi-agent orchestration / FDE delivery</strong><span>Scroll to investigate ↓</span></section><section className="home-services"><MotionReveal><div className="section-heading"><span className="eyebrow">What I do</span><p>Three practical entry points into a complex build.</p></div></MotionReveal><div className="service-list">{services.map((service, index) => <MotionReveal key={service.code} delay={index * .08}><Link className="service-row" href="/skills"><span>{service.code}</span><h2>{service.title}</h2><p>{service.description}</p><b>↗</b></Link></MotionReveal>)}</div></section><section className="home-note"><span className="eyebrow">A useful constraint</span><p>Autonomy is only valuable when you can explain what happened, why it happened, and what happens next.</p><Link className="text-link" href="/about">How I think about systems <span>↗</span></Link></section></>;
