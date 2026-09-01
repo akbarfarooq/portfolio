@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 const links = [
   ["About", "/about"],
@@ -8,5 +11,36 @@ const links = [
 ] as const;
 
 export function Header() {
-  return <header className="site-header"><Link className="brand" href="/">AKBAR<span>_</span></Link><nav aria-label="Primary navigation">{links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}<Link className="nav-cta" href="/contact">Start a project <span>↗</span></Link></nav></header>;
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <header className="site-header">
+      <Link className="brand" href="/">
+        AKBAR<span>_</span>
+      </Link>
+      <button
+        className={`mobile-menu-toggle ${isOpen ? "open" : ""}`}
+        onClick={() => setIsOpen(!isOpen)}
+        aria-label="Toggle menu"
+        aria-expanded={isOpen}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav
+        aria-label="Primary navigation"
+        className={`site-nav ${isOpen ? "open" : ""}`}
+      >
+        {links.map(([label, href]) => (
+          <Link key={href} href={href} onClick={() => setIsOpen(false)}>
+            {label}
+          </Link>
+        ))}
+        <Link className="nav-cta" href="/contact" onClick={() => setIsOpen(false)}>
+          Start a project <span>↗</span>
+        </Link>
+      </nav>
+    </header>
+  );
 }
